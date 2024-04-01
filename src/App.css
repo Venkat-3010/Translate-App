@@ -1,0 +1,176 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url('/public/hero_img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.ta-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 1rem;
+}
+
+.ta-logo{
+  width: 120px;
+}
+
+textarea{
+  background: transparent;
+  resize: none;
+  border: none;
+  width: 100%;
+}
+
+textarea, p{
+  color: #F9FAFB;
+}
+
+textarea:focus, select:focus{
+  outline: none;
+}
+
+.ta-charCount{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ta-sections{
+  display: flex;
+  gap: 2rem;
+}
+
+.ta-left{
+  background-color: #212936cc;
+}
+
+.ta-right{
+  background-color: #121826cc;
+}
+
+.ta-left, .ta-right{
+  width: 550px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+select{
+  width: 100px;
+  padding: 10px;
+  border: none;
+  background: none;
+  border-radius: 7px;
+  color: #4D5562;
+  cursor: pointer;
+}
+
+.ta-buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.imgBtns{
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.ta-img-btn{
+  border: 1px solid #4D5562;
+  padding: 2px;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button{
+  border: none;
+  padding: 10px;
+  margin-right: 5px;
+  background: none;
+  border-radius: 7px;
+  color: #4D5562;
+  cursor: pointer;
+}
+
+button:focus, button:hover, select:hover, select:focus{
+  background-color:  #394150;
+  color: #CDD5E0;
+}
+
+.ta-translate:focus{
+  background-color: #7CA9F3;
+}
+
+hr{
+  margin-top: 1rem;
+}
+
+p{
+  margin-top: 1rem;
+}
+
+.ta-langSwitch{
+  float: right;
+  border: 1px solid ;
+  padding: 5px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.ta-translate{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  color: #F9FAFB;
+  background-color: #3662E3;
+  border-radius: 1rem;
+  padding: 0.5rem 0.7rem;
+  gap: 1rem;
+}
+
+@media (max-width: 1135px){
+  .ta-sections{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ta-right, .ta-left{
+    max-width: 950px;
+    height: 310px;
+    gap: 0;
+  }
+
+  .ta-container{
+    gap:1rem
+  }
+
+  .ta-sections{
+    gap: 10px;
+  }
+}
+
+@media (max-width: 640px){
+  .ta-left, .ta-right{
+    max-width: 500px;
+    height: 310px;
+    gap: 0;
+  }
+}
