@@ -5,21 +5,18 @@
 }
 
 body{
-  background-image: url('/public/hero_img.jpg');
+  background-image: url('/hero_img.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .ta-container{
-  max-width: 100vw;
-  max-height: 100vh;
+  margin-top: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 1rem;
-  padding: 1rem;
 }
 
 .ta-logo{
@@ -152,14 +149,19 @@ p{
 }
 
 @media (max-width: 1135px){
+  .ta-container{
+    margin: 2vh 0;
+  }
+
   .ta-sections{
     flex-direction: column;
   }
 
   .ta-right, .ta-left{
     max-width: 90%;
-    height: 310px;
     margin: 0 auto;
+    height: 50vh;
+    justify-content: space-between;
     gap: 0;
   }
 
@@ -175,7 +177,6 @@ p{
 @media (max-width: 640px){
   .ta-left, .ta-right{
     max-width: 310px;
-    height: 310px;
     gap: 0;
   }
 }

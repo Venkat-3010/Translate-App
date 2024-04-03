@@ -152,7 +152,7 @@ export const TranslateApp = () => {
               <p>{translatedText}</p>
             </div>
           </div>
-          <div className="ta-buttons">
+          <div className="ta-buttons ">
             <div className="imgBtns">
               <img
                 src={sound}
